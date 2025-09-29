@@ -1,103 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to UniRemote Legal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      min-height: 100vh;
-      margin: 0;
-      background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16), 0 2px 4px rgba(44, 62, 80, 0.11);
-      max-width: 380px;
-      width: 100%;
-      padding: 2.2rem 2rem 2rem 2rem;
-      text-align: center;
-      position: relative;
-      animation: card-drop 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-      opacity: 0;
-      top: -60px;
-    }
-    @keyframes card-drop {
-      100% {
-        opacity: 1;
-        top: 0;
-      }
-    }
-    .logo {
-      width: 68px;
-      height: 68px;
-      margin-bottom: 1.2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(47, 128, 237, 0.16);
-      object-fit: cover;
-      background: #eceef1;
-    }
-    h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.1rem;
-      font-weight: 700;
-      color: #2552a3;
-      letter-spacing: -0.5px;
-    }
-    p {
-      font-size: 1.08rem;
-      color: #506696;
-      margin-bottom: 2rem;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .link-btn {
-      padding: 0.95rem;
-      border: none;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #6DD5FA 0%, #2980B9 100%);
-      color: #fff;
-      font-size: 1.14rem;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 1px 3px rgba(44, 62, 80, 0.07);
-      transition: background 0.18s, transform 0.13s;
-      display: block;
-    }
-    .link-btn:hover {
-      background: linear-gradient(90deg, #2980B9 0%, #6DD5FA 100%);
-      transform: translateY(-2px) scale(1.035);
-    }
-    @media (max-width: 480px) {
-      .card { padding: 1.2rem 0.5rem; }
-      h1 { font-size: 1.36rem; }
-      .links .link-btn { font-size: 1rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniRemote - Legal Documents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 40px 0;
+            text-align: center;
+            padding: 60px 40px;
+        }
+
+        .logo {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .button-secondary {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+        }
+
+        .app-info {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .card {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="card">
-    <!-- If you have a logo image, place it in the same folder and uncomment the next line,
-         else remove the img tag. -->
-    <!-- <img src="logo.png" alt="Logo" class="logo"> -->
-    <h1>UniRemote Legal Center</h1>
-    <p>
-      Welcome to the legal resources for UniRemote.<br>
-      Access our terms, privacy policy, and related documents below.
-    </p>
-    <div class="links">
-      <a class="link-btn" href="terms-of-service.html">Terms of Service</a>
-      <a class="link-btn" href="privacy-policy.htm">Privacy Policy</a>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h1>UniRemote</h1>
+            <div class="subtitle">Universal TV Remote Controller</div>
+            
+            <div class="button-container">
+                <a href="privacy_policy.html" class="button">
+                    <i class="fas fa-user-shield"></i> Privacy Policy
+                </a>
+                <a href="toc.html" class="button button-secondary">
+                    <i class="fas fa-file-contract"></i> Terms of Service
+                </a>
+            </div>
+
+            <div class="app-info">
+                <p style="color: #666; margin-bottom: 10px;">
+                    <strong>Developed by ARS Software</strong>
+                </p>
+                <p style="color: #888; font-size: 0.9em;">
+                    Control your TV from your phone with ease
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 ARS Software. All rights reserved.</p>
+        </div>
     </div>
-  </div>
 </body>
 </html>
