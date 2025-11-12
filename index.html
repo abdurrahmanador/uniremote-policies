@@ -1,103 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to UniRemote Legal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      min-height: 100vh;
-      margin: 0;
-      background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
-      font-family: 'Roboto', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16), 0 2px 4px rgba(44, 62, 80, 0.11);
-      max-width: 380px;
-      width: 100%;
-      padding: 2.2rem 2rem 2rem 2rem;
-      text-align: center;
-      position: relative;
-      animation: card-drop 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-      opacity: 0;
-      top: -60px;
-    }
-    @keyframes card-drop {
-      100% {
-        opacity: 1;
-        top: 0;
-      }
-    }
-    .logo {
-      width: 68px;
-      height: 68px;
-      margin-bottom: 1.2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(47, 128, 237, 0.16);
-      object-fit: cover;
-      background: #eceef1;
-    }
-    h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.1rem;
-      font-weight: 700;
-      color: #2552a3;
-      letter-spacing: -0.5px;
-    }
-    p {
-      font-size: 1.08rem;
-      color: #506696;
-      margin-bottom: 2rem;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .link-btn {
-      padding: 0.95rem;
-      border: none;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #6DD5FA 0%, #2980B9 100%);
-      color: #fff;
-      font-size: 1.14rem;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 1px 3px rgba(44, 62, 80, 0.07);
-      transition: background 0.18s, transform 0.13s;
-      display: block;
-    }
-    .link-btn:hover {
-      background: linear-gradient(90deg, #2980B9 0%, #6DD5FA 100%);
-      transform: translateY(-2px) scale(1.035);
-    }
-    @media (max-width: 480px) {
-      .card { padding: 1.2rem 0.5rem; }
-      h1 { font-size: 1.36rem; }
-      .links .link-btn { font-size: 1rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Samsung TV Remote – WayRemote</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-left: 4px solid #667eea;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            border-bottom: 2px solid white;
+            padding-bottom: 2px;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <!-- If you have a logo image, place it in the same folder and uncomment the next line,
-         else remove the img tag. -->
-    <!-- <img src="logo.png" alt="Logo" class="logo"> -->
-    <h1>UniRemote Legal Center</h1>
-    <p>
-      Welcome to the legal resources for UniRemote.<br>
-      Access our terms, privacy policy, and related documents below.
-    </p>
-    <div class="links">
-      <a class="link-btn" href="terms-of-service.html">Terms of Service</a>
-      <a class="link-btn" href="privacy-policy.htm">Privacy Policy</a>
+    <div class="container">
+        <div class="header">
+            <h1>📱 Privacy Policy</h1>
+            <p>Samsung TV Remote – WayRemote</p>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> January 17, 2025<br>
+                <strong>Effective Date:</strong> January 17, 2025
+            </div>
+
+            <section>
+                <h2>1. Introduction</h2>
+                <p>
+                    Welcome to Samsung TV Remote – WayRemote ("we," "our," or "the App"). We are committed to protecting your privacy and ensuring transparency about how we handle your information.
+                </p>
+                <p>
+                    <strong>This App does not collect, store, or share any personal data.</strong> All functionality operates locally on your device and local network.
+                </p>
+            </section>
+
+            <section>
+                <h2>2. Information We Do NOT Collect</h2>
+                <p>We want to be clear about what we DON'T do:</p>
+                <ul>
+                    <li>❌ We do NOT collect your personal information</li>
+                    <li>❌ We do NOT track your location</li>
+                    <li>❌ We do NOT access your contacts, photos, or files</li>
+                    <li>❌ We do NOT monitor your TV viewing habits</li>
+                    <li>❌ We do NOT sell your data to third parties</li>
+                    <li>❌ We do NOT use analytics or tracking tools</li>
+                    <li>❌ We do NOT share data with advertisers</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. How the App Works</h2>
+                <p>Samsung TV Remote – WayRemote operates entirely on your local network:</p>
+                
+                <h3>3.1 Device Discovery</h3>
+                <ul>
+                    <li>The App scans your local WiFi network to find Samsung TVs</li>
+                    <li>This happens only on your local network (no internet required)</li>
+                    <li>Device information stays on your phone</li>
+                </ul>
+
+                <h3>3.2 TV Connection</h3>
+                <ul>
+                    <li>The App connects directly to your TV via WebSocket</li>
+                    <li>Connection uses standard Samsung TV APIs</li>
+                    <li>All communication is local (device ↔ TV)</li>
+                    <li>Authentication tokens are stored locally on your device</li>
+                </ul>
+
+                <h3>3.3 Remote Control</h3>
+                <ul>
+                    <li>Commands are sent directly to your TV</li>
+                    <li>No data passes through our servers</li>
+                    <li>No third parties involved</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Data Storage (Local Only)</h2>
+                <p>The App stores the following data <strong>locally on your device</strong>:</p>
+                
+                <h3>4.1 TV Connection Information</h3>
+                <ul>
+                    <li>TV IP addresses</li>
+                    <li>TV names/models</li>
+                    <li>Authentication tokens</li>
+                    <li>Connection history</li>
+                    <li>Saved devices</li>
+                </ul>
+
+                <h3>4.2 App Preferences</h3>
+                <ul>
+                    <li>Trial start date (for 3-day free trial)</li>
+                    <li>Subscription status (via RevenueCat)</li>
+                    <li>App settings and preferences</li>
+                </ul>
+
+                <div class="highlight">
+                    <strong>Important:</strong> All this data is stored locally using Android's SharedPreferences. It never leaves your device unless you manually back it up through Android's backup system.
+                </div>
+            </section>
+
+            <section>
+                <h2>5. Third-Party Services</h2>
+                <p>We use minimal third-party services for essential functionality:</p>
+
+                <h3>5.1 RevenueCat (Subscription Management)</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Handle in-app subscriptions and free trial</li>
+                    <li><strong>What they collect:</strong> Google Play user ID, purchase transactions</li>
+                    <li><strong>Why needed:</strong> Required for subscription functionality</li>
+                    <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></li>
+                </ul>
+
+                <h3>5.2 Google Play Billing</h3>
+                <ul>
+                    <li><strong>Purpose:</strong> Process subscription payments</li>
+                    <li><strong>What they collect:</strong> Payment information (managed by Google)</li>
+                    <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+                </ul>
+
+                <div class="highlight">
+                    <strong>Note:</strong> We have no access to your payment information. All transactions are processed securely by Google Play.
+                </div>
+            </section>
+
+            <section>
+                <h2>6. Permissions Explained</h2>
+                <p>The App requires these Android permissions (and why):</p>
+
+                <h3>6.1 Network Permissions</h3>
+                <ul>
+                    <li><strong>INTERNET:</strong> Connect to your TV</li>
+                    <li><strong>ACCESS_NETWORK_STATE:</strong> Check WiFi connection</li>
+                    <li><strong>ACCESS_WIFI_STATE:</strong> Scan for TVs on network</li>
+                    <li><strong>CHANGE_WIFI_MULTICAST_STATE:</strong> Discover devices</li>
+                    <li><strong>NEARBY_WIFI_DEVICES:</strong> Find TVs nearby (Android 13+)</li>
+                </ul>
+
+                <h3>6.2 Service Permissions</h3>
+                <ul>
+                    <li><strong>FOREGROUND_SERVICE:</strong> Keep connection alive in background</li>
+                    <li><strong>WAKE_LOCK:</strong> Prevent disconnection during use</li>
+                    <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:</strong> Maintain stable connection</li>
+                </ul>
+
+                <h3>6.3 Optional Permissions</h3>
+                <ul>
+                    <li><strong>RECORD_AUDIO:</strong> Voice control (future feature, not currently used)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Children's Privacy</h2>
+                <p>
+                    Samsung TV Remote – WayRemote does not knowingly collect any information from children under 13 years of age. The App is designed for general audiences and does not target children.
+                </p>
+                <p>
+                    If you believe a child has provided information through the App, please contact us immediately.
+                </p>
+            </section>
+
+            <section>
+                <h2>8. Security</h2>
+                <p>We take security seriously:</p>
+                <ul>
+                    <li>✅ All TV connections use secure WebSocket (WSS)</li>
+                    <li>✅ Authentication tokens are encrypted by Android</li>
+                    <li>✅ No data stored on external servers</li>
+                    <li>✅ Local network only (no internet routing)</li>
+                    <li>✅ Self-signed certificates accepted (standard for Samsung TVs)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>9. Your Rights & Choices</h2>
+                
+                <h3>9.1 Data Control</h3>
+                <p>Since all data is local, you have complete control:</p>
+                <ul>
+                    <li><strong>Clear Data:</strong> Settings → Apps → Samsung TV Remote → Clear Data</li>
+                    <li><strong>Delete App:</strong> Uninstall the app to remove all data</li>
+                    <li><strong>Clear History:</strong> Use in-app "Clear History" button</li>
+                </ul>
+
+                <h3>9.2 Subscription Management</h3>
+                <ul>
+                    <li><strong>Cancel Subscription:</strong> Google Play Store → Subscriptions</li>
+                    <li><strong>Request Refund:</strong> Through Google Play Store</li>
+                    <li><strong>View Purchase History:</strong> In Google Play account</li>
+                </ul>
+
+                <h3>9.3 Opt-Out Options</h3>
+                <ul>
+                    <li>You can revoke permissions in Android Settings anytime</li>
+                    <li>Stop using the App to stop all data processing</li>
+                    <li>Uninstall removes all local data</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>10. Data Retention</h2>
+                <p>
+                    Since we don't collect data on servers, there's no data retention policy. All data exists only on your device and is removed when you:
+                </p>
+                <ul>
+                    <li>Clear the app's data</li>
+                    <li>Uninstall the app</li>
+                    <li>Factory reset your phone</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>11. International Users</h2>
+                <p>
+                    Samsung TV Remote – WayRemote is available worldwide. Since all processing happens locally on your device, no data crosses international borders.
+                </p>
+                <p>
+                    <strong>GDPR Compliance (EU):</strong> We don't collect personal data, so GDPR doesn't apply. However, RevenueCat (our subscription provider) is GDPR compliant.
+                </p>
+                <p>
+                    <strong>CCPA Compliance (California):</strong> We don't sell personal information because we don't collect it.
+                </p>
+            </section>
+
+            <section>
+                <h2>12. Changes to Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.
+                </p>
+                <p>
+                    Material changes will be announced through:
+                </p>
+                <ul>
+                    <li>In-app notification</li>
+                    <li>App update notes</li>
+                    <li>Email (if you've contacted us)</li>
+                </ul>
+            </section>
+
+            <div class="contact-box">
+                <h3>📧 Contact Us</h3>
+                <p>If you have questions about this Privacy Policy or the App:</p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:arssoftware@gmail.com">arssoftware@gmail.com</a>
+                </p>
+                <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.9;">
+                    We typically respond within 48 hours
+                </p>
+            </div>
+
+            <section>
+                <h2>13. Device Compatibility & Refund Policy</h2>
+                <div class="highlight" style="background: #fff3cd; border-left-color: #ffc107;">
+                    <strong>⚠️ Important: Test Before You Subscribe!</strong>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">
+                        Before purchasing a subscription, please use the <strong>3-day free trial</strong> to verify that the app works properly with your specific Samsung TV model.
+                    </p>
+                    <ul style="margin-top: 10px;">
+                        <li><strong>Different TV models may have different key bindings</strong></li>
+                        <li>Some buttons may not work on certain TV models</li>
+                        <li>This is due to Samsung's varying implementations across different TV series</li>
+                        <li>The app uses standard Samsung TV protocols, but compatibility varies by model</li>
+                    </ul>
+                </div>
+
+                <h3>13.1 What to Test During Trial</h3>
+                <p>Please verify the following during your free trial:</p>
+                <ul>
+                    <li>✅ TV connection and pairing</li>
+                    <li>✅ Basic navigation (D-pad, Enter, Back)</li>
+                    <li>✅ Volume and channel controls</li>
+                    <li>✅ Power on/off functionality</li>
+                    <li>✅ Important buttons you plan to use regularly</li>
+                    <li>✅ Connection stability</li>
+                </ul>
+
+                <h3>13.2 Refund Policy</h3>
+                <p>
+                    All subscriptions are managed through Google Play Store. If you experience compatibility issues:
+                </p>
+                <ul>
+                    <li><strong>Within 48 hours:</strong> Request refund directly through Google Play</li>
+                    <li><strong>After 48 hours:</strong> Contact us at <a href="mailto:arssoftware@gmail.com">arssoftware@gmail.com</a> for assistance</li>
+                    <li>We will work with you to resolve issues or assist with refunds</li>
+                </ul>
+
+                <p style="margin-top: 15px;">
+                    <strong>Note:</strong> By subscribing after the trial period, you confirm that you have tested the app and found it compatible with your TV.
+                </p>
+            </section>
+
+            <section>
+                <h2>14. Summary (TL;DR)</h2>
+                <div class="highlight">
+                    <strong>🔒 Your Privacy in Simple Terms:</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>✅ No data collection</li>
+                        <li>✅ No tracking</li>
+                        <li>✅ Everything stays on your device</li>
+                        <li>✅ Direct connection to your TV only</li>
+                        <li>✅ Subscriptions handled by Google Play</li>
+                        <li>✅ You're in complete control</li>
+                    </ul>
+                    <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
+                        <strong>⚠️ Remember:</strong> Test the app during the 3-day trial to ensure compatibility with your TV before subscribing!
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <p><strong>Samsung TV Remote – WayRemote</strong></p>
+            <p>© 2025 Waysol All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                This app is not affiliated with or endorsed by Samsung Electronics.
+            </p>
+        </div>
     </div>
-  </div>
 </body>
 </html>
